@@ -44,7 +44,7 @@ export interface IRoute {
     defaults?: IDictionary;
 }
 
-type TConfiguredRoute = [string, RegExp, Key[], PathFunction<any>, TRouterComponent, IDictionary];
+type TConfiguredRoute = [RegExp, Key[], PathFunction<any>, TRouterComponent, IDictionary];
 export interface IMatchedComponent {
     component: TRouterComponent;
     params: IDictionary;
@@ -87,13 +87,13 @@ export class RouterStore {
     protected history: History<any> | undefined;
 
     /**
-     * An index of the current routes
+     * Check if the urlBuilderCache is already initialized.
      *
      * @protected
-     * @type {{ [name: string]: IRoute }}
+     * @type {boolean}
      * @memberof RouterStore
      */
-    protected routes?: IRoute[] = undefined;
+    protected initialized: boolean = false;
 
     /**
      * Creates an instance of RouterStore.
@@ -123,30 +123,22 @@ export class RouterStore {
 
     public initRoutes(routes: IRoute[]) {
         let me = this;
-        if (!me.routes) {
-            this.routes = [];
+        if (!me.initialized) {
             wrapInArray<IRoute>(routes || []).forEach(route => {
                 // make sure we always have a name
                 route.name = route.name || route.path;
                 if (!me.urlBuilderCache[route.name]) {
-                    const url = new URL(route.path),
-                        host = [
-                            url.protocol ? `${url.protocol}//` : "",
-                            url.username && url.password ? `${url.username}:${url.password}@` : "",
-                            url.host
-                        ].join(""),
-                        pathname = route.path.replace(host, ""),
-                        matcherKeys: Key[] = [],
+                    const matcherKeys: Key[] = [],
                         matcher = pathToRegexp(route.path, matcherKeys);
 
                     me.urlBuilderCache[route.name] = [
-                        host,
                         matcher,
                         matcherKeys,
-                        pathToRegexp.compile(pathname),
+                        pathToRegexp.compile(route.path),
                         route.component, route.defaults || {}];
                 }
             });
+            me.initialized = true;
         }
     }
 
@@ -158,25 +150,27 @@ export class RouterStore {
      */
     get MatchedComponent(): IMatchedComponent {
         const me = this;
+        let result: IMatchedComponent = null as any;
         (Object.values(me.urlBuilderCache) || []).forEach((item: TConfiguredRoute) => {
-            const [
-                host,
-                matcher,
-                matcherKeys,
-                toPath,
-                component,
-                defaults] = item;
+            if (!result) {
+                const [
+                    matcher,
+                    matcherKeys,
+                    toPath,
+                    component,
+                    defaults] = item;
 
-            if (matcher.test(me.location)) {
-                // we have matched the route
-                const matched = (matcher.exec(me.location) || []).splice(1);
-                const params = deepCopy(defaults || {});
-                matcherKeys.forEach((key, index) => {
-                    params[key.name] = matched[index] || undefined;
-                });
-                return { component, params };
+                if (matcher.test(me.location)) {
+                    // we have matched the route
+                    const matched = (matcher.exec(me.location) || []).splice(1);
+                    const params = deepCopy(defaults || {});
+                    matcherKeys.forEach((key, index) => {
+                        params[key.name] = matched[index] || undefined;
+                    });
+                    result = { component, params };
+                }
             }
         });
-        return null as any;
+        return result;
     }
 }
