@@ -150,7 +150,7 @@ export class RouterStore {
      */
     get MatchedComponent(): IMatchedComponent {
         const me = this;
-        let result: IMatchedComponent = null as any;
+        let result: IMatchedComponent = { component: null, params: null } as any;
         (Object.values(me.urlBuilderCache) || []).forEach((item: TConfiguredRoute) => {
             if (!result) {
                 const [
