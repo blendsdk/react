@@ -18,7 +18,17 @@ yarn add @blendsdk/mobx-router
 ## Usage
 
 ```ts
-import { createBrowserHistory, initRouter } from "@blendsdk/mobx-router";
+import {
+    createBrowserHistory,
+    initRouter,
+    IRoute,
+    Link,
+    Redirect,
+    ROUTE_404,
+    ROUTE_CATCH_ALL,
+    Router,
+    useRouter
+} from "@blendsdk/mobx-router";
 
 // Step 1: First we initialize the History provider
 // For more information the the history package on npmjs
@@ -77,4 +87,20 @@ To customize the built-in 404 route, just configure a route similar to:
         component: My404PageComponent // your custom 404 page
     }
 ....
+```
+
+## The `Link` component
+
+This component provides an easy way to render a link that is handled by the `Router`.
+
+Properties:
+
+-   `to` is the name of the route
+-   `params` is a key/value pare to set the route parameters
+-   `reload` an optional boolean that if set to true will reload the page when the link is clicked
+
+```ts
+<Link to='name-of-the-route' params={{ name: "sally" }} reload={true}>
+    Text goes here...
+</Link>
 ```
