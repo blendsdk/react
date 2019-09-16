@@ -23,4 +23,40 @@ import { createBrowserHistory, initRouter } from "@blendsdk/mobx-router";
 // Step 1: First we initialize the History provider
 // For more information the the history package on npmjs
 initRouter(createBrowserHistory());
+
+// Step 2: Create some routes
+//     Every rout needs to have:
+//          - A name; that is used to identify the Route
+//          - A path; that is used as a template to generate an URL
+//          - A component; that is rendered in the incoming URL is matched to the path
+//          - Optionally; a key/value pare providing default values for the path parameters
+const routes: IRoute[] = [
+    {
+        name: "dashboard",
+        path: "/",
+        component: Dashboard
+    },
+    {
+        name: "greet",
+        path: "/greet/:name/name",
+        component: Greet,
+        // The default value of the :name parameter
+        defaults: {
+            name: "Johny Bravo"
+        }
+    },
+    {
+        // If no route is matched then this one is chosen as fallback
+        name: ROUTE_CATCH_ALL,
+        path: "",
+        component: Dashboard
+    }
+];
+
+// Step 3: Render the router with the routes parameter
+const Main = () => {
+    return <Router routes={routes}></Router>;
+};
+
+ReactDOM.render(<Main />, document.getElementById("root"));
 ```
