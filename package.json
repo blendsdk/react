@@ -5,8 +5,8 @@
         "packages/*"
     ],
     "scripts": {
-        "build_all": "lerna clean -y && lerna bootstrap && lerna link && lerna run build --ignore=router1",
-        "publish_patch": "yarn build_all && lerna publish patch --ignore=router1"
+        "build_all": "lerna clean -y && lerna bootstrap && lerna link && lerna run build",
+        "publish_patch": "yarn build_all && lerna publish patch --no-private"
     },
     "devDependencies": {
         "@types/jest": "^24.0.18",
