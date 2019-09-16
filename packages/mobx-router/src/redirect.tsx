@@ -12,6 +12,7 @@ import { useRouter } from "./context";
 export interface IRedirectProps extends IDictionary {
     to: string;
     params?: IDictionary;
+    reload?: boolean;
 }
 
 /**
@@ -19,10 +20,10 @@ export interface IRedirectProps extends IDictionary {
  * @param props
  */
 export const Redirect: React.FunctionComponent<IRedirectProps> = props => {
-    const { to, params } = props,
+    const { to, params, reload } = props,
         router = useRouter();
     useEffect(() => {
-        router.go(to, params);
+        router.go(to, params, reload);
     });
     return <i />;
 };

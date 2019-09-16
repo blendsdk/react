@@ -104,3 +104,66 @@ Properties:
     Text goes here...
 </Link>
 ```
+
+```ts
+<Link to='order-items' params={{ order: someValue }}>
+    Text goes here
+</Link>
+```
+
+## The `Redirect` component
+
+This component is similar to the `Link` component except that is does not generate a user interface.
+When this component is rendered it will immediately redirect the to provided route.
+
+Properties:
+
+-   `to` is the name of the route
+-   `params` is a key/value pare to set the route parameters
+-   `reload` an optional boolean that if set to true will redirect by reloading the page.
+
+```ts
+const SomeComponent = () => {
+    return authenticated ? <Dashboard /> : <Redirect to='login' params={{ param1: true }} reload={true} />;
+};
+```
+
+## Hooks
+
+In order to get a reference to the router you can make use of the `useRouter` hook
+
+```ts
+const Component = () => {
+    const router = useRouter();
+    ...
+};
+```
+
+## API
+
+The router component provides the following API
+
+### The `go` method
+
+```ts
+    const router = useRouter();
+
+    // Navigate to a route
+    router.go('name-of-the-route', { param1,'value1' });
+
+    // Navigate to a route by reloading the page
+    router.go('name-of-the-route', { param1,'value1' }, true);
+```
+
+### The `generateUrl`
+
+This method generates a URL based on a path name or a parameters.
+
+```ts
+const router = useRouter();
+const url = router.generateUrl("order-item", { orderNumber: 1000 });
+```
+
+## License
+
+MIT

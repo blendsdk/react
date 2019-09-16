@@ -1,5 +1,6 @@
 import { apply } from "@blendsdk/stdlib/dist/apply";
 import { deepCopy } from "@blendsdk/stdlib/dist/deepcopy";
+import { isNullOrUndefDefault } from "@blendsdk/stdlib/dist/isNullOrUndef";
 import { IDictionary } from "@blendsdk/stdlib/dist/types";
 import { wrapInArray } from "@blendsdk/stdlib/dist/wrapInArray";
 import { History } from "history";
@@ -135,7 +136,11 @@ export class RouterStore {
 
         // listen to the history changes
         me.history.listen(location => {
-            me.location = location.pathname;
+            if (location.state.reload) {
+                window.location.reload(true);
+            } else {
+                me.location = location.pathname;
+            }
         });
 
         // fire a reaction
@@ -166,7 +171,7 @@ export class RouterStore {
     }
 
     /**
-     * Initialoizes a single route
+     * Initializes a single route
      *
      * @protected
      * @param {IRoute} route
@@ -206,7 +211,7 @@ export class RouterStore {
     }
 
     /**
-     * Generates a URL based on a path name or a parameter.
+     * Generates a URL based on a path name or a parameters.
      *
      * @param {string} pathName
      * @param {IDictionary} params
@@ -225,10 +230,18 @@ export class RouterStore {
         }
     }
 
+    /**
+     * Navigates the current location to a given route name
+     *
+     * @param {string} pathName
+     * @param {IDictionary} [params]
+     * @param {boolean} [reload]
+     * @memberof RouterStore
+     */
     @action
-    public go(pathName: string, params?: IDictionary) {
+    public go(pathName: string, params?: IDictionary, reload?: boolean) {
         const me = this;
-        me.history.push(me.generateUrl(pathName, params));
+        me.history.push(me.generateUrl(pathName, params), { reload: isNullOrUndefDefault(reload, false) });
     }
 
     /**
