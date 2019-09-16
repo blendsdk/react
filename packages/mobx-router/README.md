@@ -60,3 +60,21 @@ const Main = () => {
 
 ReactDOM.render(<Main />, document.getElementById("root"));
 ```
+
+## 404 Route
+
+If you do not wish to configure a `catch all` route then you have the option to configure a 404
+route to catch the unmatched location changes. The `Router` component provides a default 404 route
+if the incoming URL is not matched and there is also no `catch all` route.
+
+To customize the built-in 404 route, just configure a route similar to:
+
+```ts
+....
+    {
+        name: ROUTE_404,
+        path:"/not-found", // or something meaningful path name
+        component: My404PageComponent // your custom 404 page
+    }
+....
+```
