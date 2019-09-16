@@ -205,16 +205,30 @@ export class RouterStore {
         }
     }
 
-    @action
-    public go(pathName: string, params?: IDictionary) {
+    /**
+     * Generates a URL based on a path name or a parameter.
+     *
+     * @param {string} pathName
+     * @param {IDictionary} params
+     * @returns
+     * @memberof RouterStore
+     */
+    public generateUrl(pathName: string, params: IDictionary) {
+        params = params || {};
         const me = this,
             route = me.urlBuilderCache[pathName] || null;
         if (route) {
             const { toPath, defaults } = route;
-            me.history.push(toPath(apply(params || {}, defaults)));
+            return toPath(apply(params || {}, defaults));
         } else {
-            me.history.push(pathName);
+            return pathName;
         }
+    }
+
+    @action
+    public go(pathName: string, params?: IDictionary) {
+        const me = this;
+        me.history.push(me.generateUrl(pathName, params));
     }
 
     /**
