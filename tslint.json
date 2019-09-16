@@ -1,0 +1,23 @@
+{
+    "defaultSeverity": "error",
+    "linterOptions": {
+        "exclude": ["**/node_modules/**/*", "**/dist/**/*"]
+    },
+    "extends": ["tslint:recommended"],
+    "jsRules": {},
+    "rules": {
+        "trailing-comma": false,
+        "indent": false,
+        "arrow-parens": false,
+        "one-variable-per-declaration": false,
+        "object-literal-sort-keys": false,
+        "no-empty-interface": false,
+        "no-empty": false,
+        "member-ordering": false,
+        "object-literal-key-quotes": false,
+        "no-console": false,
+        "max-line-length": false,
+        "variable-name": false
+    },
+    "rulesDirectory": []
+}
