@@ -1,13 +1,22 @@
+import { apply } from "@blendsdk/stdlib/dist/apply";
 import { deepCopy } from "@blendsdk/stdlib/dist/deepcopy";
 import { IDictionary } from "@blendsdk/stdlib/dist/types";
 import { wrapInArray } from "@blendsdk/stdlib/dist/wrapInArray";
-import { apply } from "@blendsdk/stdlib/dist/apply";
 import { History } from "history";
-import { observable, reaction, action } from "mobx";
-import { NotFound404 } from "./404"
+import { action, observable, reaction } from "mobx";
 import pathToRegexp, { Key, PathFunction } from "path-to-regexp";
+import { NotFound404 } from "./404";
 
 export type TRouterComponent = (...params: any[]) => any;
+
+/**
+ * Name of a 404 route
+ */
+export const ROUTE_404 = "404";
+/**
+ * Name of a catch-all route
+ */
+export const ROUTE_CATCH_ALL = "*";
 
 /**
  * Interface describing a Route
@@ -52,11 +61,11 @@ export interface IRoute {
  * @interface IParsedRoute
  */
 interface IParsedRoute {
-    matcher: RegExp,
-    matcherKeys: Key[],
-    toPath: PathFunction<any>
-    component: TRouterComponent,
-    defaults: IDictionary
+    matcher: RegExp;
+    matcherKeys: Key[];
+    toPath: PathFunction<any>;
+    component: TRouterComponent;
+    defaults: IDictionary;
 }
 
 /**
@@ -93,7 +102,7 @@ export class RouterStore {
      * @memberof RouterStore
      */
     protected urlBuilderCache: {
-        [name: string]: IParsedRoute
+        [name: string]: IParsedRoute;
     } = {};
 
     /**
@@ -121,18 +130,18 @@ export class RouterStore {
      * @memberof RouterStore
      */
     constructor(history: History<any>) {
-        let me = this;
+        const me = this;
         me.history = history;
 
         // listen to the history changes
-        me.history.listen((location) => {
+        me.history.listen(location => {
             me.location = location.pathname;
         });
 
         // fire a reaction
         reaction(
             () => me.location,
-            (location) => {
+            location => {
                 me.location = location;
             }
         );
@@ -150,10 +159,10 @@ export class RouterStore {
     protected init404() {
         const me = this;
         me.initRoute({
-            name: '404',
-            path: '/404',
+            name: ROUTE_404,
+            path: `/${ROUTE_404}`,
             component: NotFound404
-        })
+        });
     }
 
     /**
@@ -175,7 +184,7 @@ export class RouterStore {
                 toPath: pathToRegexp.compile(route.path),
                 component: route.component,
                 defaults: route.defaults
-            }
+            };
         }
     }
 
@@ -189,7 +198,7 @@ export class RouterStore {
         const me = this;
         if (!me.initialized) {
             wrapInArray<IRoute>(routes || []).forEach(route => {
-                me.initRoute(route)
+                me.initRoute(route);
             });
             me.init404();
             me.initialized = true;
@@ -204,8 +213,23 @@ export class RouterStore {
             const { toPath, defaults } = route;
             me.history.push(toPath(apply(params || {}, defaults)));
         } else {
-            me.history.push(pathName)
+            me.history.push(pathName);
         }
+    }
+
+    /**
+     * Gets a fallback component in case no route is matched.
+     *
+     * @protected
+     * @returns {IMatchedComponent}
+     * @memberof RouterStore
+     */
+    protected getFallbackComponent(): IMatchedComponent {
+        const me = this;
+        return {
+            component: (me.urlBuilderCache["*"] || me.urlBuilderCache[ROUTE_404]).component,
+            params: {}
+        };
     }
 
     /**
@@ -216,24 +240,21 @@ export class RouterStore {
      */
     get MatchedComponent(): IMatchedComponent {
         const me = this;
-        for(let index in me.urlBuilderCache) {
-            const item = me.urlBuilderCache[index];
-            const {
-                matcher,
-                matcherKeys,
-                component,
-                defaults } = item;
-            if (matcher.test(me.location)) {
-                // we have matched the route
-                const matched = (matcher.exec(me.location) || []).splice(1);
-                const params = deepCopy(defaults || {});
-                matcherKeys.forEach((key, index) => {
-                    params[key.name] = matched[index] || undefined;
-                });
-                return { component, params };
+        for (const name in me.urlBuilderCache) {
+            if (me.urlBuilderCache[name]) {
+                const item = me.urlBuilderCache[name];
+                const { matcher, matcherKeys, component, defaults } = item;
+                if (matcher.test(me.location)) {
+                    // we have matched the route
+                    const matched = (matcher.exec(me.location) || []).splice(1);
+                    const params = deepCopy(defaults || {});
+                    matcherKeys.forEach((key, index) => {
+                        params[key.name] = matched[index] || undefined;
+                    });
+                    return { component, params };
+                }
             }
-
         }
-        return { component: me.urlBuilderCache['404'].component, params: {} }
+        return me.getFallbackComponent();
     }
 }
