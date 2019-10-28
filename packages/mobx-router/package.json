@@ -25,16 +25,16 @@
     "test": "jest --detectOpenHandles --passWithNoTests"
   },
   "dependencies": {
-    "@blendsdk/stdlib": "^1.1.4",
+    "@blendsdk/stdlib": "^1.5.0",
     "@types/history": "^4.7.3",
     "history": "^4.10.1",
-    "mobx": "^5.13.0",
-    "mobx-react": "^6.1.3",
+    "mobx": "^5.14.2",
+    "mobx-react": "^6.1.4",
     "path-to-regexp": "^3.1.0",
-    "react": "^16.9.0"
+    "react": "^16.11.0"
   },
   "devDependencies": {
-    "@types/react": "^16.9.2"
+    "@types/react": "^16.9.11"
   },
   "gitHead": "4ad29c3162244108180986c1cc227fa9f129b391"
 }
