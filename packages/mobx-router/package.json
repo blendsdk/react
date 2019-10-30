@@ -1,6 +1,6 @@
 {
   "name": "@blendsdk/mobx-router",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "React Mobx router for @blendsdk",
   "main": "dist/index.js",
   "author": "Gevik Babakhani <gevikb@gmail.com>",
