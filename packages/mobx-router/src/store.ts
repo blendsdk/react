@@ -78,6 +78,7 @@ interface IParsedRoute {
 export interface IMatchedComponent {
     component: TRouterComponent;
     params: IDictionary;
+    routeName: string;
 }
 
 /**
@@ -255,7 +256,8 @@ export class RouterStore {
         const me = this;
         return {
             component: (me.urlBuilderCache["*"] || me.urlBuilderCache[ROUTE_404]).component,
-            params: {}
+            params: {},
+            routeName: "fallback"
         };
     }
 
@@ -278,7 +280,7 @@ export class RouterStore {
                     matcherKeys.forEach((key, index) => {
                         params[key.name] = matched[index] || undefined;
                     });
-                    return { component, params };
+                    return { component, params, routeName: name };
                 }
             }
         }
