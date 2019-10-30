@@ -22,7 +22,7 @@ export const Router = observer(({ routes }: IRouterProps) => {
         const Component = component;
         return <Component {...params} />;
     } else {
-        throw new Error(`nvalid React component provided for route ${routeName}: ${component}`);
+        throw new Error(`Invalid React component provided for route ${routeName}: ${component}`);
     }
 });
 
