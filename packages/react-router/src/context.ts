@@ -8,6 +8,21 @@ import { RouterStore } from "./store";
 export let routerProvider: React.Context<RouterStore>;
 
 /**
+ * Instance to the RouterStore
+ */
+let routerStore: RouterStore = null;
+
+/**
+ * Returns a reference to the router store
+ *
+ * @export
+ * @returns {RouterStore}
+ */
+export function getRouterStore(): RouterStore {
+    return routerStore;
+}
+
+/**
  * Initializes the RouterStore provided
  * a History provider instance
  *
@@ -15,7 +30,8 @@ export let routerProvider: React.Context<RouterStore>;
  * @param {History<any>} history
  */
 export function initRouter(history: History<any>) {
-    routerProvider = React.createContext(new RouterStore(history));
+    routerStore = new RouterStore(history);
+    routerProvider = React.createContext(routerStore);
 }
 
 /**

@@ -1,7 +1,7 @@
 {
-  "name": "@blendsdk/mobx-router",
-  "version": "0.0.11",
-  "description": "React Mobx router for @blendsdk",
+  "name": "@blendsdk/react-router",
+  "version": "1.0.1",
+  "description": "React router for @blendsdk",
   "main": "dist/index.js",
   "author": "Gevik Babakhani <gevikb@gmail.com>",
   "repository": {
@@ -25,16 +25,16 @@
     "test": "jest --detectOpenHandles --passWithNoTests"
   },
   "dependencies": {
-    "@blendsdk/stdlib": "^1.1.4",
+    "@blendsdk/stdlib": "^1.7.9",
     "@types/history": "^4.7.3",
     "history": "^4.10.1",
-    "mobx": "^5.13.0",
-    "mobx-react": "^6.1.3",
-    "path-to-regexp": "^3.1.0",
-    "react": "^16.9.0"
+    "mobx": "^5.15.0",
+    "mobx-react": "^6.1.4",
+    "path-to-regexp": "^6.1.0",
+    "react": "^16.12.0"
   },
   "devDependencies": {
-    "@types/react": "^16.9.2"
+    "@types/react": "^16.9.14"
   },
-  "gitHead": "4ad29c3162244108180986c1cc227fa9f129b391"
+  "gitHead": "72832f93f352a5d601e66efc4d72b41eb0e717ba"
 }

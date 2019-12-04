@@ -5,7 +5,7 @@ import { IDictionary } from "@blendsdk/stdlib/dist/types";
 import { wrapInArray } from "@blendsdk/stdlib/dist/wrapInArray";
 import { History } from "history";
 import { action, observable, reaction } from "mobx";
-import pathToRegexp, { Key, PathFunction } from "path-to-regexp";
+import { compile, Key, PathFunction, pathToRegexp } from "path-to-regexp";
 import { NotFound404 } from "./404";
 
 export type TRouterComponent = (...params: any[]) => any;
@@ -78,6 +78,7 @@ interface IParsedRoute {
 export interface IMatchedComponent {
     component: TRouterComponent;
     params: IDictionary;
+    routeName: string;
 }
 
 /**
@@ -186,7 +187,7 @@ export class RouterStore {
             me.urlBuilderCache[route.name] = {
                 matcher,
                 matcherKeys,
-                toPath: pathToRegexp.compile(route.path),
+                toPath: compile(route.path),
                 component: route.component,
                 defaults: route.defaults
             };
@@ -255,7 +256,8 @@ export class RouterStore {
         const me = this;
         return {
             component: (me.urlBuilderCache["*"] || me.urlBuilderCache[ROUTE_404]).component,
-            params: {}
+            params: {},
+            routeName: "fallback"
         };
     }
 
@@ -278,7 +280,7 @@ export class RouterStore {
                     matcherKeys.forEach((key, index) => {
                         params[key.name] = matched[index] || undefined;
                     });
-                    return { component, params };
+                    return { component, params, routeName: name };
                 }
             }
         }

@@ -15,12 +15,15 @@ export const Router = observer(({ routes }: IRouterProps) => {
         // no-op
     }, [routerStore.location]);
 
-    const { component, params } = routerStore.MatchedComponent;
+    const { component, params, routeName } = routerStore.MatchedComponent;
 
-    // Why ?
-    const Component = component;
-
-    return <Component {...params} />;
+    if (component) {
+        // Why ?
+        const Component = component;
+        return <Component {...params} />;
+    } else {
+        throw new Error(`Invalid React component provided for route ${routeName}: ${component}`);
+    }
 });
 
 export const Dummy = observer(() => {
