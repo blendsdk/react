@@ -1,6 +1,6 @@
 {
   "name": "@blendsdk/react-router",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "React router for @blendsdk",
   "main": "dist/index.js",
   "author": "Gevik Babakhani <gevikb@gmail.com>",
