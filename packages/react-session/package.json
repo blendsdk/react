@@ -1,6 +1,6 @@
 {
   "name": "@blendsdk/react-session",
-  "version": "0.0.16",
+  "version": "1.0.1",
   "description": "A React user session provider for BlendSDK",
   "main": "dist/index.js",
   "author": "Gevik Babakhani <gevikb@gmail.com>",
@@ -25,13 +25,13 @@
     "test": "jest --detectOpenHandles --passWithNoTests"
   },
   "dependencies": {
+    "@blendsdk/react-router": "^1.0.1",
     "@blendsdk/stdlib": "^1.7.9",
-    "@blendsdk/react-router": "0.0.16",
-    "mobx-react": "^6.1.4",
-    "react": "^16.12.0",
+    "@types/js-cookie": "^2.2.4",
     "js-cookie": "^2.2.1",
     "mobx": "^5.15.0",
-    "@types/js-cookie": "^2.2.4"
+    "mobx-react": "^6.1.4",
+    "react": "^16.12.0"
   },
   "devDependencies": {
     "@types/react": "^16.9.14"
