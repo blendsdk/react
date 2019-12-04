@@ -137,19 +137,6 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@blendsdk/react-router@^1.0.3":
-  version "1.0.3"
-  resolved "http://pak.truesoftware.net/@blendsdk%2freact-router/-/react-router-1.0.3.tgz#383393ecf114f55306df5860aa3647c271b84227"
-  integrity sha512-FCODJGx1CcFoaQZejSM3uTtuOjQ6yCAsPSkpYf6q8L1MkKcH4yx8mxMJk2KENcj217mT/77jhbsX/efXSqI5GQ==
-  dependencies:
-    "@blendsdk/stdlib" "^1.7.9"
-    "@types/history" "^4.7.3"
-    history "^4.10.1"
-    mobx "^5.15.0"
-    mobx-react "^6.1.4"
-    path-to-regexp "^6.1.0"
-    react "^16.12.0"
-
 "@blendsdk/stdlib@^1.7.9":
   version "1.7.9"
   resolved "http://pak.truesoftware.net/@blendsdk%2fstdlib/-/stdlib-1.7.9.tgz#014bdfc8667f8e60d8d8c6a69ddba176e32332d8"
