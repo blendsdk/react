@@ -1,5 +1,4 @@
-
-import { Component, IComponentConfig } from "@blendsdk/stdlib";
+import { apply } from "@blendsdk/stdlib/dist/apply";
 import { wrapInArray } from "@blendsdk/stdlib/dist/wrapInArray";
 import Cookie from "js-cookie";
 import { computed, observable } from "mobx";
@@ -9,9 +8,8 @@ import { computed, observable } from "mobx";
  *
  * @export
  * @interface ISessionStoreConfig
- * @extends {IComponentConfig}
  */
-export interface ISessionStoreConfig extends IComponentConfig {
+export interface ISessionStoreConfig {
     /**
      * A list of paths to skip the session checking
      *
@@ -43,7 +41,10 @@ export interface ISessionStoreConfig extends IComponentConfig {
  * @export
  * @class SessionStore
  */
-export class SessionStore extends Component<ISessionStoreConfig> {
+export class SessionStore {
+
+    protected config: ISessionStoreConfig;
+
     /**
      * List of paths to be skip for session checking
      *
@@ -117,8 +118,8 @@ export class SessionStore extends Component<ISessionStoreConfig> {
      * @memberof SessionStore
      */
     constructor(config?: ISessionStoreConfig) {
-        super(config);
-        this.configDefaults({
+        this.config = config || {} as ISessionStoreConfig;
+        this.config = apply(this.config, {
             skipPaths: [],
             userInactivityTTLSeconds: 15, // 15 minutes
             keepAliveAPI: null
