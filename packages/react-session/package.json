@@ -25,16 +25,19 @@
     "test": "jest --detectOpenHandles --passWithNoTests"
   },
   "dependencies": {
-    "@blendsdk/react-router": "^1.0.2",
+    "@blendsdk/react-router": "^1.0.3",
     "@blendsdk/stdlib": "^1.7.9",
     "@types/js-cookie": "^2.2.4",
     "js-cookie": "^2.2.1",
     "mobx": "^5.15.0",
-    "mobx-react": "^6.1.4",
-    "react": "^16.12.0"
+    "mobx-react": "^6.1.4"
+  },
+  "peerDependencies": {
+    "react": ">=16.12.0"
   },
   "devDependencies": {
-    "@types/react": "^16.9.14"
+    "@types/react": "^16.9.14",
+    "react": "^16.12.0"
   },
   "gitHead": "72832f93f352a5d601e66efc4d72b41eb0e717ba"
 }
