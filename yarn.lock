@@ -10,24 +10,14 @@
     "@babel/highlight" "^7.0.0"
 
 "@babel/core@^7.1.0":
-<<<<<<< HEAD
-  version "7.7.5"
-  resolved "http://pak.truesoftware.net/@babel%2fcore/-/core-7.7.5.tgz#ae1323cd035b5160293307f50647e83f8ba62f7e"
-  integrity sha512-M42+ScN4+1S9iB6f+TL7QBpoQETxbclx+KNoKJABghnKYE+fMzSGqst0BZJc8CpI625bwPwYgUyRvxZ+0mZzpw==
-=======
   version "7.7.7"
   resolved "http://pak.truesoftware.net/@babel%2fcore/-/core-7.7.7.tgz#ee155d2e12300bcc0cff6a8ad46f2af5063803e9"
   integrity sha512-jlSjuj/7z138NLZALxVgrx13AOtqip42ATZP7+kYl53GvDV6+4dCek1mVUo8z8c8Xnw/mx2q3d9HWh3griuesQ==
->>>>>>> removed deperacted packages and annd react-webafx
   dependencies:
     "@babel/code-frame" "^7.5.5"
     "@babel/generator" "^7.7.7"
     "@babel/helpers" "^7.7.4"
-<<<<<<< HEAD
-    "@babel/parser" "^7.7.5"
-=======
     "@babel/parser" "^7.7.7"
->>>>>>> removed deperacted packages and annd react-webafx
     "@babel/template" "^7.7.4"
     "@babel/traverse" "^7.7.4"
     "@babel/types" "^7.7.4"
@@ -95,17 +85,10 @@
     esutils "^2.0.2"
     js-tokens "^4.0.0"
 
-<<<<<<< HEAD
-"@babel/parser@^7.1.0", "@babel/parser@^7.4.3", "@babel/parser@^7.7.4", "@babel/parser@^7.7.5":
-  version "7.7.5"
-  resolved "http://pak.truesoftware.net/@babel%2fparser/-/parser-7.7.5.tgz#cbf45321619ac12d83363fcf9c94bb67fa646d71"
-  integrity sha512-KNlOe9+/nk4i29g0VXgl8PEXIRms5xKLJeuZ6UptN0fHv+jDiriG+y94X6qAgWTR0h3KaoM1wK5G5h7MHFRSig==
-=======
 "@babel/parser@^7.1.0", "@babel/parser@^7.4.3", "@babel/parser@^7.7.4", "@babel/parser@^7.7.7":
   version "7.7.7"
   resolved "http://pak.truesoftware.net/@babel%2fparser/-/parser-7.7.7.tgz#1b886595419cf92d811316d5b715a53ff38b4937"
   integrity sha512-WtTZMZAZLbeymhkd/sEaPD8IQyGAhmuTuvTzLiCFM7iXiVdY0gc0IaI+cW0fh1BnSMbJSzXX6/fHllgHKwHhXw==
->>>>>>> removed deperacted packages and annd react-webafx
 
 "@babel/plugin-syntax-object-rest-spread@^7.0.0":
   version "7.7.4"
@@ -115,15 +98,9 @@
     "@babel/helper-plugin-utils" "^7.0.0"
 
 "@babel/runtime@^7.1.2":
-<<<<<<< HEAD
-  version "7.7.6"
-  resolved "http://pak.truesoftware.net/@babel%2fruntime/-/runtime-7.7.6.tgz#d18c511121aff1b4f2cd1d452f1bac9601dd830f"
-  integrity sha512-BWAJxpNVa0QlE5gZdWjSxXtemZyZ9RmrmVozxt3NUXeZhVIJ5ANyqmMc0JDrivBZyxUuQvFxlvH4OWWOogGfUw==
-=======
   version "7.7.7"
   resolved "http://pak.truesoftware.net/@babel%2fruntime/-/runtime-7.7.7.tgz#194769ca8d6d7790ec23605af9ee3e42a0aa79cf"
   integrity sha512-uCnC2JEVAu8AKB5do1WRIsvrdJ0flYx/A/9f/6chdacnEZ7LmavjdsDXr5ksYBegxtuTPR5Va9/+13QF/kFkCA==
->>>>>>> removed deperacted packages and annd react-webafx
   dependencies:
     regenerator-runtime "^0.13.2"
 
@@ -160,20 +137,6 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-<<<<<<< HEAD
-"@blendsdk/i18n@^1.8.4":
-  version "1.8.4"
-  resolved "http://pak.truesoftware.net/@blendsdk%2fi18n/-/i18n-1.8.4.tgz#b5a396befd27690f50d4491cd72ce858a8edc992"
-  integrity sha512-9J7FTpvtg19mfztxEA89+KMFBNm5Z0VgpnCjibsPkBv6d0M69kWLLGlNbNwSXTqMW5k6r8LNOUQDb/Y+KkD3cw==
-  dependencies:
-    "@blendsdk/stdlib" "^1.8.4"
-    tslib "^1.10.0"
-
-"@blendsdk/stdlib@^1.8.4":
-  version "1.8.4"
-  resolved "http://pak.truesoftware.net/@blendsdk%2fstdlib/-/stdlib-1.8.4.tgz#3aadb8d14ffd302703fd8f493d13bc4b00b29824"
-  integrity sha512-lw/KNoo2Gu3AF4RyNDi8TpQ1d9UgQHRutsIL8NwbZ9Uq1xcqSFAv4G1+VLRjvgSMLjEnzHWl47dxusmZ/Jp0FA==
-=======
 "@blendsdk/clientkit@^1.13.3":
   version "1.13.3"
   resolved "http://pak.truesoftware.net/@blendsdk%2fclientkit/-/clientkit-1.13.3.tgz#ecb53d46c82b586e05df9105f7f50e3948f0f217"
@@ -196,7 +159,6 @@
   version "1.13.3"
   resolved "http://pak.truesoftware.net/@blendsdk%2fstdlib/-/stdlib-1.13.3.tgz#313adfbdd72f5cfe6873b1577a46b1c05e0da57a"
   integrity sha512-ilYV/7SIL3VY8+TpWBNp/iZkxChxnL8bfVjhnJcdDGfGpLdETS1B03VWFKcFL5TORnCx06UM86ruK3Z7Dt/x3g==
->>>>>>> removed deperacted packages and annd react-webafx
   dependencies:
     "@types/mkdirp" "^0.5.2"
     mkdirp "^0.5.1"
@@ -1183,15 +1145,9 @@
     universal-user-agent "^4.0.0"
 
 "@octokit/rest@^16.28.4":
-<<<<<<< HEAD
-  version "16.35.2"
-  resolved "http://pak.truesoftware.net/@octokit%2frest/-/rest-16.35.2.tgz#0098c9e2a895d4afb0fa6578479283553543143c"
-  integrity sha512-iijaNZpn9hBpUdh8YdXqNiWazmq4R1vCUsmxpBB0kCQ0asHZpCx+HNs22eiHuwYKRhO31ZSAGBJLi0c+3XHaKQ==
-=======
   version "16.36.0"
   resolved "http://pak.truesoftware.net/@octokit%2frest/-/rest-16.36.0.tgz#99892c57ba632c2a7b21845584004387b56c2cb7"
   integrity sha512-zoZj7Ya4vWBK4fjTwK2Cnmu7XBB1p9ygSvTk2TthN6DVJXM4hQZQoAiknWFLJWSTix4dnA3vuHtjPZbExYoCZA==
->>>>>>> removed deperacted packages and annd react-webafx
   dependencies:
     "@octokit/request" "^5.2.0"
     "@octokit/request-error" "^1.0.2"
@@ -1331,34 +1287,20 @@
   dependencies:
     "@types/node" "*"
 
-<<<<<<< HEAD
-"@types/node@*", "@types/node@>= 8", "@types/node@^12.12.18":
-  version "12.12.18"
-  resolved "http://pak.truesoftware.net/@types%2fnode/-/node-12.12.18.tgz#8d16634797d63c2af5bc647ce879f8de20b56469"
-  integrity sha512-DBkZuIMFuAfjJHiunyRc+aNvmXYNwV1IPMgGKGlwCp6zh6MKrVtmvjSWK/axWcD25KJffkXgkfvFra8ndenXAw==
-=======
 "@types/node@*", "@types/node@>= 8", "@types/node@^13.1.2":
   version "13.1.2"
   resolved "http://pak.truesoftware.net/@types%2fnode/-/node-13.1.2.tgz#fe94285bf5e0782e1a9e5a8c482b1c34465fa385"
   integrity sha512-B8emQA1qeKerqd1dmIsQYnXi+mmAzTB7flExjmy5X1aVAKFNNNDubkavwR13kR6JnpeLp3aLoJhwn9trWPAyFQ==
->>>>>>> removed deperacted packages and annd react-webafx
 
 "@types/prop-types@*":
   version "15.7.3"
   resolved "http://pak.truesoftware.net/@types%2fprop-types/-/prop-types-15.7.3.tgz#2ab0d5da2e5815f94b0b9d4b95d1e5f243ab2ca7"
   integrity sha512-KfRL3PuHmqQLOG+2tGpRO26Ctg+Cq1E01D2DMriKEATHgWLfeNDmq9e29Q9WIky0dQ3NPkd1mzYH8Lm936Z9qw==
 
-<<<<<<< HEAD
-"@types/react@^16.9.16":
-  version "16.9.16"
-  resolved "http://pak.truesoftware.net/@types%2freact/-/react-16.9.16.tgz#4f12515707148b1f53a8eaa4341dae5dfefb066d"
-  integrity sha512-dQ3wlehuBbYlfvRXfF5G+5TbZF3xqgkikK7DWAsQXe2KnzV+kjD4W2ea+ThCrKASZn9h98bjjPzoTYzfRqyBkw==
-=======
 "@types/react@^16.9.17":
   version "16.9.17"
   resolved "http://pak.truesoftware.net/@types%2freact/-/react-16.9.17.tgz#58f0cc0e9ec2425d1441dd7b623421a867aa253e"
   integrity sha512-UP27In4fp4sWF5JgyV6pwVPAQM83Fj76JOcg02X5BZcpSu5Wx+fP9RMqc2v0ssBoQIFvD5JdKY41gjJJKmw6Bg==
->>>>>>> removed deperacted packages and annd react-webafx
   dependencies:
     "@types/prop-types" "*"
     csstype "^2.2.0"
@@ -1471,8 +1413,6 @@ agentkeepalive@^3.4.1:
   dependencies:
     humanize-ms "^1.2.1"
 
-<<<<<<< HEAD
-=======
 agentkeepalive@^4.1.0:
   version "4.1.0"
   resolved "http://pak.truesoftware.net/agentkeepalive/-/agentkeepalive-4.1.0.tgz#a48e040ed16745dd29ce923675f60c9c90f39ee0"
@@ -1482,7 +1422,6 @@ agentkeepalive@^4.1.0:
     depd "^1.1.2"
     humanize-ms "^1.2.1"
 
->>>>>>> removed deperacted packages and annd react-webafx
 aggregate-error@^3.0.0:
   version "3.0.1"
   resolved "http://pak.truesoftware.net/aggregate-error/-/aggregate-error-3.0.1.tgz#db2fe7246e536f40d9b5442a39e117d7dd6a24e0"
@@ -2510,7 +2449,7 @@ debug@^2.2.0, debug@^2.3.3:
   dependencies:
     ms "2.0.0"
 
-debug@^3.1.0:
+debug@^3.1.0, debug@^3.2.6:
   version "3.2.6"
   resolved "http://pak.truesoftware.net/debug/-/debug-3.2.6.tgz#e83d17de16d8a7efb7717edbe5fb10135eee629b"
   integrity sha512-mel+jf7nrtEl5Pn1Qx46zARXKDpBbvzezse7p7LqINmdoIk8PYP5SySaxEmYv6TZ0JyEKA1hsCId6DIhgITtWQ==
@@ -2628,6 +2567,11 @@ detect-indent@^5.0.0:
   resolved "http://pak.truesoftware.net/detect-indent/-/detect-indent-5.0.0.tgz#3871cc0a6a002e8c3e5b3cf7f336264675f06b9d"
   integrity sha1-OHHMCmoALow+Wzz38zYmRnXwa50=
 
+detect-libc@^1.0.2:
+  version "1.0.3"
+  resolved "http://pak.truesoftware.net/detect-libc/-/detect-libc-1.0.3.tgz#fa137c4bd698edf55cd5cd02ac559f91a4c4ba9b"
+  integrity sha1-+hN8S9aY7fVc1c0CrFWfkaTEups=
+
 detect-newline@^2.1.0:
   version "2.1.0"
   resolved "http://pak.truesoftware.net/detect-newline/-/detect-newline-2.1.0.tgz#f41f1c10be4b00e87b5f13da680759f2c5bfd3e2"
@@ -2730,14 +2674,11 @@ env-paths@^2.2.0:
   version "2.2.0"
   resolved "http://pak.truesoftware.net/env-paths/-/env-paths-2.2.0.tgz#cdca557dc009152917d6166e2febe1f039685e43"
   integrity sha512-6u0VYSCo/OW6IoD5WCLLy9JUGARbamfSavcNXry/eu8aHVFei6CD3Sw+VGX5alea1i9pgPHW0mbu6Xj0uBh7gA==
-<<<<<<< HEAD
-=======
 
 envinfo@^7.3.1:
   version "7.5.0"
   resolved "http://pak.truesoftware.net/envinfo/-/envinfo-7.5.0.tgz#91410bb6db262fb4f1409bd506e9ff57e91023f4"
   integrity sha512-jDgnJaF/Btomk+m3PZDTTCb5XIIIX3zYItnCRfF73zVgvinLoRomuhi75Y4su0PtQxWz4v66XnLLckyvyJTOIQ==
->>>>>>> removed deperacted packages and annd react-webafx
 
 err-code@^1.0.0:
   version "1.1.2"
@@ -2752,15 +2693,9 @@ error-ex@^1.2.0, error-ex@^1.3.1:
     is-arrayish "^0.2.1"
 
 es-abstract@^1.17.0-next.1:
-<<<<<<< HEAD
-  version "1.17.0-next.1"
-  resolved "http://pak.truesoftware.net/es-abstract/-/es-abstract-1.17.0-next.1.tgz#94acc93e20b05a6e96dacb5ab2f1cb3a81fc2172"
-  integrity sha512-7MmGr03N7Rnuid6+wyhD9sHNE2n4tFSwExnU2lQl3lIo2ShXWGePY80zYaoMOmILWv57H0amMjZGHNzzGG70Rw==
-=======
   version "1.17.0"
   resolved "http://pak.truesoftware.net/es-abstract/-/es-abstract-1.17.0.tgz#f42a517d0036a5591dbb2c463591dc8bb50309b1"
   integrity sha512-yYkE07YF+6SIBmg1MsJ9dlub5L48Ek7X0qz+c/CPCHS9EBXfESorzng4cJQjJW5/pB6vDF41u7F8vUhLVDqIug==
->>>>>>> removed deperacted packages and annd react-webafx
   dependencies:
     es-to-primitive "^1.2.1"
     function-bind "^1.1.1"
@@ -2771,13 +2706,8 @@ es-abstract@^1.17.0-next.1:
     object-inspect "^1.7.0"
     object-keys "^1.1.1"
     object.assign "^4.1.0"
-<<<<<<< HEAD
-    string.prototype.trimleft "^2.1.0"
-    string.prototype.trimright "^2.1.0"
-=======
     string.prototype.trimleft "^2.1.1"
     string.prototype.trimright "^2.1.1"
->>>>>>> removed deperacted packages and annd react-webafx
 
 es-to-primitive@^1.2.1:
   version "1.2.1"
@@ -3330,11 +3260,7 @@ glob-to-regexp@^0.3.0:
   resolved "http://pak.truesoftware.net/glob-to-regexp/-/glob-to-regexp-0.3.0.tgz#8c5a1494d2066c570cc3bfe4496175acc4d502ab"
   integrity sha1-jFoUlNIGbFcMw7/kSWF1rMTVAqs=
 
-<<<<<<< HEAD
-glob@^7.1.1, glob@^7.1.2, glob@^7.1.3, glob@^7.1.4:
-=======
 glob@^7.1.1, glob@^7.1.2, glob@^7.1.3, glob@^7.1.4, glob@^7.1.6:
->>>>>>> removed deperacted packages and annd react-webafx
   version "7.1.6"
   resolved "http://pak.truesoftware.net/glob/-/glob-7.1.6.tgz#141f33b81a7c2492e125594307480c46679278a6"
   integrity sha512-LwaxwyZ72Lk7vZINtNNrywX0ZuLyStrdDtabefZKAY5ZGJhVtgdznluResxNmPitE0SAO+O26sWTHeKSI2wMBA==
@@ -3567,15 +3493,6 @@ https-proxy-agent@^2.2.3:
     agent-base "^4.3.0"
     debug "^3.1.0"
 
-<<<<<<< HEAD
-https-proxy-agent@^3.0.1:
-  version "3.0.1"
-  resolved "http://pak.truesoftware.net/https-proxy-agent/-/https-proxy-agent-3.0.1.tgz#b8c286433e87602311b01c8ea34413d856a4af81"
-  integrity sha512-+ML2Rbh6DAuee7d07tYGEKOEi2voWPUGan+ExdPbPW6Z3svq+JCqr0v8WmKPOkz1vOVykPCBSuobe7G8GJUtVg==
-  dependencies:
-    agent-base "^4.3.0"
-    debug "^3.1.0"
-=======
 https-proxy-agent@^4.0.0:
   version "4.0.0"
   resolved "http://pak.truesoftware.net/https-proxy-agent/-/https-proxy-agent-4.0.0.tgz#702b71fb5520a132a66de1f67541d9e62154d82b"
@@ -3583,7 +3500,6 @@ https-proxy-agent@^4.0.0:
   dependencies:
     agent-base "5"
     debug "4"
->>>>>>> removed deperacted packages and annd react-webafx
 
 humanize-ms@^1.2.1:
   version "1.2.1"
@@ -3592,7 +3508,7 @@ humanize-ms@^1.2.1:
   dependencies:
     ms "^2.0.0"
 
-iconv-lite@0.4.24, iconv-lite@^0.4.24, iconv-lite@~0.4.13:
+iconv-lite@0.4.24, iconv-lite@^0.4.24, iconv-lite@^0.4.4, iconv-lite@~0.4.13:
   version "0.4.24"
   resolved "http://pak.truesoftware.net/iconv-lite/-/iconv-lite-0.4.24.tgz#2022b4b25fbddc21d2f524974a474aafe733908b"
   integrity sha512-v3MXnZAcvnywkTUEZomIActle7RXXeedOR31wwl7VlyoXO4Qi9arvSenNQWne1TcRwhCL1HwLI21bEqdpj8/rA==
@@ -3926,11 +3842,7 @@ is-promise@^2.1.0:
   resolved "http://pak.truesoftware.net/is-promise/-/is-promise-2.1.0.tgz#79a2a9ece7f096e80f36d2b2f3bc16c1ff4bf3fa"
   integrity sha1-eaKp7OfwlugPNtKy87wWwf9L8/o=
 
-<<<<<<< HEAD
-is-regex@^1.0.4:
-=======
 is-regex@^1.0.5:
->>>>>>> removed deperacted packages and annd react-webafx
   version "1.0.5"
   resolved "http://pak.truesoftware.net/is-regex/-/is-regex-1.0.5.tgz#39d589a358bf18967f726967120b8fc1aed74eae"
   integrity sha512-vlKW17SNq44owv5AQR3Cq0bQPEb8+kF3UKZ2fiZNOWtztYE5i0CzCZxFDwO58qAOWtxdBRVO/V5Qin1wjCqFYQ==
@@ -4841,18 +4753,6 @@ make-fetch-happen@^5.0.0:
     socks-proxy-agent "^4.0.0"
     ssri "^6.0.0"
 
-<<<<<<< HEAD
-make-fetch-happen@^6.0.0:
-  version "6.1.0"
-  resolved "http://pak.truesoftware.net/make-fetch-happen/-/make-fetch-happen-6.1.0.tgz#7d3c647913136efd73e94bde899f85fcd3eda09e"
-  integrity sha512-Q/RHcHofC+BnleSGDiO3SQQX2mCvXz639s+kJ7+loR4RPT487itVJ8RWIyBEfnqpnkaUFaWgNyV6CxT7eyDdEA==
-  dependencies:
-    agentkeepalive "^3.4.1"
-    cacache "^13.0.1"
-    http-cache-semantics "^3.8.1"
-    http-proxy-agent "^2.1.0"
-    https-proxy-agent "^3.0.1"
-=======
 make-fetch-happen@^7.1.0:
   version "7.1.0"
   resolved "http://pak.truesoftware.net/make-fetch-happen/-/make-fetch-happen-7.1.0.tgz#22038954801048ac598c72e0f0c239e42d97fa2e"
@@ -4864,7 +4764,6 @@ make-fetch-happen@^7.1.0:
     http-proxy-agent "^3.0.0"
     https-proxy-agent "^4.0.0"
     is-lambda "^1.0.1"
->>>>>>> removed deperacted packages and annd react-webafx
     lru-cache "^5.1.1"
     minipass "^3.0.0"
     minipass-collect "^1.0.2"
@@ -5262,6 +5161,15 @@ natural-compare@^1.4.0:
   resolved "http://pak.truesoftware.net/natural-compare/-/natural-compare-1.4.0.tgz#4abebfeed7541f2c27acfb29bdbbd15c8d5ba4f7"
   integrity sha1-Sr6/7tdUHywnrPspvbvRXI1bpPc=
 
+needle@^2.2.1:
+  version "2.4.0"
+  resolved "http://pak.truesoftware.net/needle/-/needle-2.4.0.tgz#6833e74975c444642590e15a750288c5f939b57c"
+  integrity sha512-4Hnwzr3mi5L97hMYeNl8wRW/Onhy4nUKR/lVemJ8gJedxxUyBLm9kkrDColJvoSfwi0jCNhD+xCdOtiGDQiRZg==
+  dependencies:
+    debug "^3.2.6"
+    iconv-lite "^0.4.4"
+    sax "^1.2.4"
+
 neo-async@^2.6.0:
   version "2.6.1"
   resolved "http://pak.truesoftware.net/neo-async/-/neo-async-2.6.1.tgz#ac27ada66167fa8849a6addd837f6b189ad2081c"
@@ -5337,8 +5245,6 @@ node-notifier@^5.4.2:
     shellwords "^0.1.1"
     which "^1.3.0"
 
-<<<<<<< HEAD
-=======
 node-pre-gyp@*:
   version "0.14.0"
   resolved "http://pak.truesoftware.net/node-pre-gyp/-/node-pre-gyp-0.14.0.tgz#9a0596533b877289bcad4e143982ca3d904ddc83"
@@ -5355,7 +5261,6 @@ node-pre-gyp@*:
     semver "^5.3.0"
     tar "^4.4.2"
 
->>>>>>> removed deperacted packages and annd react-webafx
 nopt@^4.0.1:
   version "4.0.1"
   resolved "http://pak.truesoftware.net/nopt/-/nopt-4.0.1.tgz#d0d4685afd5415193c8c7505602d0d17cd64474d"
@@ -5391,11 +5296,7 @@ normalize-url@^4.1.0:
   resolved "http://pak.truesoftware.net/normalize-url/-/normalize-url-4.5.0.tgz#453354087e6ca96957bd8f5baf753f5982142129"
   integrity sha512-2s47yzUxdexf1OhyRi4Em83iQk0aPvwTddtFz4hnSSw9dCEsLEGf6SwIO8ss/19S9iBb5sJaOuTvTGDeZI00BQ==
 
-<<<<<<< HEAD
-npm-bundled@^1.0.1:
-=======
 npm-bundled@^1.0.1, npm-bundled@^1.1.1:
->>>>>>> removed deperacted packages and annd react-webafx
   version "1.1.1"
   resolved "http://pak.truesoftware.net/npm-bundled/-/npm-bundled-1.1.1.tgz#1edd570865a94cdb1bc8220775e29466c9fb234b"
   integrity sha512-gqkfgGePhTpAEgUsGEgcq1rqPXA+tv/aVBlgEzfXwA1yiUJF7xtEt3CtVwOjNYQOVknDk0F20w58Fnm3EtG0fA==
@@ -5457,19 +5358,6 @@ npm-normalize-package-bin@^1.0.0, npm-normalize-package-bin@^1.0.1:
     semver "^5.6.0"
     validate-npm-package-name "^3.0.0"
 
-<<<<<<< HEAD
-npm-package-arg@^7.0.0:
-  version "7.0.0"
-  resolved "http://pak.truesoftware.net/npm-package-arg/-/npm-package-arg-7.0.0.tgz#52cdf08b491c0c59df687c4c925a89102ef794a5"
-  integrity sha512-xXxr8y5U0kl8dVkz2oK7yZjPBvqM2fwaO5l3Yg13p03v8+E3qQcD0JNhHzjL1vyGgxcKkD0cco+NLR72iuPk3g==
-  dependencies:
-    hosted-git-info "^3.0.2"
-    osenv "^0.1.5"
-    semver "^5.6.0"
-    validate-npm-package-name "^3.0.0"
-
-npm-packlist@^1.4.4, npm-packlist@^1.4.6:
-=======
 npm-package-arg@^8.0.0:
   version "8.0.0"
   resolved "http://pak.truesoftware.net/npm-package-arg/-/npm-package-arg-8.0.0.tgz#b519989b569efffa1fa050fb22a3c3c322d4bcc5"
@@ -5481,7 +5369,6 @@ npm-package-arg@^8.0.0:
     validate-npm-package-name "^3.0.0"
 
 npm-packlist@^1.1.6, npm-packlist@^1.4.4:
->>>>>>> removed deperacted packages and annd react-webafx
   version "1.4.7"
   resolved "http://pak.truesoftware.net/npm-packlist/-/npm-packlist-1.4.7.tgz#9e954365a06b80b18111ea900945af4f88ed4848"
   integrity sha512-vAj7dIkp5NhieaGZxBJB8fF4R0078rqsmhJcAfXZ6O7JJhjhPK96n5Ry1oZcfLXgfun0GWTZPOxaEyqv8GBykQ==
@@ -5508,26 +5395,6 @@ npm-pick-manifest@^3.0.0:
     npm-package-arg "^6.0.0"
     semver "^5.4.1"
 
-<<<<<<< HEAD
-npm-pick-manifest@^4.0.0:
-  version "4.0.0"
-  resolved "http://pak.truesoftware.net/npm-pick-manifest/-/npm-pick-manifest-4.0.0.tgz#5e1b392a2a6310378b9bab32332597030ca073ce"
-  integrity sha512-SsYReLe/16UgSL6GKX6GO4o3RVBthVy1uuHq6kZ9mkPeQXpOHbrLZoV13i8fr3LQtET+pLPSfD13e4RIYfkX5Q==
-  dependencies:
-    figgy-pudding "^3.5.1"
-    npm-package-arg "^7.0.0"
-    semver "^5.4.1"
-
-npm-registry-fetch@^5.0.1:
-  version "5.0.1"
-  resolved "http://pak.truesoftware.net/npm-registry-fetch/-/npm-registry-fetch-5.0.1.tgz#98f59f2ac83440baf7a4fbe800972cfe37c9334d"
-  integrity sha512-GK7SUx188KSkPvbceOGO59L3FGHLBYoP0YEhUAKYjAypL15v5xmoempZ9rIJS2R/1eOS0KS1Y9AQe79YfgNxaw==
-  dependencies:
-    bluebird "^3.5.1"
-    figgy-pudding "^3.4.1"
-    lru-cache "^5.1.1"
-    make-fetch-happen "^6.0.0"
-=======
 npm-pick-manifest@^5.0.0:
   version "5.0.0"
   resolved "http://pak.truesoftware.net/npm-pick-manifest/-/npm-pick-manifest-5.0.0.tgz#2163877aec513b6b634cfc855960ac8259130df0"
@@ -5546,16 +5413,11 @@ npm-registry-fetch@^6.0.0:
     figgy-pudding "^3.4.1"
     lru-cache "^5.1.1"
     make-fetch-happen "^7.1.0"
->>>>>>> removed deperacted packages and annd react-webafx
     minipass "^3.0.0"
     minipass-fetch "^1.1.2"
     minipass-json-stream "^1.0.1"
     minizlib "^2.0.0"
-<<<<<<< HEAD
-    npm-package-arg "^7.0.0"
-=======
     npm-package-arg "^8.0.0"
->>>>>>> removed deperacted packages and annd react-webafx
     safe-buffer "^5.2.0"
     semver "^7.0.0"
 
@@ -5566,11 +5428,7 @@ npm-run-path@^2.0.0:
   dependencies:
     path-key "^2.0.0"
 
-<<<<<<< HEAD
-npmlog@^4.1.2:
-=======
 npmlog@^4.0.2, npmlog@^4.1.2:
->>>>>>> removed deperacted packages and annd react-webafx
   version "4.1.2"
   resolved "http://pak.truesoftware.net/npmlog/-/npmlog-4.1.2.tgz#08a7f2a8bf734604779a9efa4ad5cc717abb954b"
   integrity sha512-2uUqazuKlTaSI/dC8AzicUck7+IrEaOnN/e0jd3Xtt1KcGpwx30v50mL7oPyr/h9bL3E4aZccVwpwP+5W9Vjkg==
@@ -5832,18 +5690,11 @@ package-json@^6.3.0:
     semver "^6.2.0"
 
 pacote@^10.2.0:
-<<<<<<< HEAD
-  version "10.2.1"
-  resolved "http://pak.truesoftware.net/pacote/-/pacote-10.2.1.tgz#4107f72eeaaacb47eb68952ed31c050bab9d3f94"
-  integrity sha512-sPHVOF7uKY8yDivKYimb5l3D8BvNNjR+9FmzkThOTtftkddGY/C6uENVkgc3HQtOpCX8R2qztkSAOI369bgLEA==
-  dependencies:
-=======
   version "10.3.0"
   resolved "http://pak.truesoftware.net/pacote/-/pacote-10.3.0.tgz#34cae76ff976e04a2eea3b54b483fc46d9534318"
   integrity sha512-Qq4nZkTyjKvNWj0TKfV29Q9416RQ9hALPjU5ej6ckavV1WLcurc0aZqJBKcAf2OHX6RuE1fi0N+TBCP9EyM1+Q==
   dependencies:
     "@npmcli/installed-package-contents" "^1.0.5"
->>>>>>> removed deperacted packages and annd react-webafx
     cacache "^13.0.1"
     chownr "^1.1.3"
     fs-minipass "^2.0.0"
@@ -5851,20 +5702,6 @@ pacote@^10.2.0:
     lru-cache "^5.1.1"
     minipass "^3.0.1"
     minipass-fetch "^1.2.1"
-<<<<<<< HEAD
-    npm-package-arg "^7.0.0"
-    npm-packlist "^1.4.6"
-    npm-pick-manifest "^4.0.0"
-    npm-registry-fetch "^5.0.1"
-    osenv "^0.1.5"
-    promise-inflight "^1.0.1"
-    promise-retry "^1.1.1"
-    read-package-json-fast "^1.0.3"
-    semver "^6.3.0"
-    ssri "^7.1.0"
-    tar "^5.0.5"
-    which "^2.0.1"
-=======
     npm-package-arg "^8.0.0"
     npm-packlist "^2.0.3"
     npm-pick-manifest "^5.0.0"
@@ -5877,7 +5714,6 @@ pacote@^10.2.0:
     ssri "^7.1.0"
     tar "^5.0.5"
     which "^2.0.2"
->>>>>>> removed deperacted packages and annd react-webafx
 
 parallel-transform@^1.1.0:
   version "1.2.0"
@@ -6136,15 +5972,9 @@ pseudomap@^1.0.2:
   integrity sha1-8FKijacOYYkX7wqKw0wa5aaChrM=
 
 psl@^1.1.24, psl@^1.1.28:
-<<<<<<< HEAD
-  version "1.6.0"
-  resolved "http://pak.truesoftware.net/psl/-/psl-1.6.0.tgz#60557582ee23b6c43719d9890fb4170ecd91e110"
-  integrity sha512-SYKKmVel98NCOYXpkwUqZqh0ahZeeKfmisiLIcEZdsb+WbLv02g/dI5BUmZnIyOe7RzZtLax81nnb2HbvC2tzA==
-=======
   version "1.7.0"
   resolved "http://pak.truesoftware.net/psl/-/psl-1.7.0.tgz#f1c4c47a8ef97167dea5d6bbf4816d736e884a3c"
   integrity sha512-5NsSEDv8zY70ScRnOTn7bK7eanl2MvFrOrS/R6x+dBt5g1ghnj9Zv90kO8GwT8gxcu2ANyFprnFYB85IogIJOQ==
->>>>>>> removed deperacted packages and annd react-webafx
 
 pump@^2.0.0:
   version "2.0.1"
@@ -6211,7 +6041,7 @@ rc-config-loader@^3.0.0:
     json5 "^2.1.1"
     require-from-string "^2.0.2"
 
-rc@^1.2.8, rc@~1.2.7:
+rc@^1.2.7, rc@^1.2.8, rc@~1.2.7:
   version "1.2.8"
   resolved "http://pak.truesoftware.net/rc/-/rc-1.2.8.tgz#cd924bf5200a075b83c188cd6b9e211b7fc0d3ed"
   integrity sha512-y3bGgqKj3QBdxLbLkomlohkvsA8gdAiUQlSBJnBhfn+BPxg4bc62d8TcBW15wavDfgexCgccckhcZvywyQYPOw==
@@ -6233,11 +6063,7 @@ read-cmd-shim@^1.0.1:
   dependencies:
     graceful-fs "^4.1.2"
 
-<<<<<<< HEAD
-read-package-json-fast@^1.0.3:
-=======
 read-package-json-fast@^1.1.1:
->>>>>>> removed deperacted packages and annd react-webafx
   version "1.1.1"
   resolved "http://pak.truesoftware.net/read-package-json-fast/-/read-package-json-fast-1.1.1.tgz#fd19b660cadc608d7a8a441191d8e971b590ebda"
   integrity sha512-vDw3wiWLwUXhYBCVvjAQJGCI5+DcgwGSYlFETCV9m/b107/yNBnYfCkoVrwHj7338j1z24/dxUXvtrXVjVjL1Q==
@@ -6557,11 +6383,7 @@ retry@^0.10.0:
   resolved "http://pak.truesoftware.net/retry/-/retry-0.10.1.tgz#e76388d217992c252750241d3d3956fed98d8ff4"
   integrity sha1-52OI0heZLCUnUCQdPTlW/tmNj/Q=
 
-<<<<<<< HEAD
-rimraf@^2.5.4, rimraf@^2.6.2, rimraf@^2.6.3, rimraf@^2.7.1:
-=======
 rimraf@^2.5.4, rimraf@^2.6.1, rimraf@^2.6.2, rimraf@^2.6.3, rimraf@^2.7.1:
->>>>>>> removed deperacted packages and annd react-webafx
   version "2.7.1"
   resolved "http://pak.truesoftware.net/rimraf/-/rimraf-2.7.1.tgz#35797f13a7fdadc566142c29d4f07ccad483e3ec"
   integrity sha512-uWjbaKIK3T1OSVptzX7Nl6PvQ3qAGtKEtVRjRuazjfL3Bx5eI409VZSqgND+4UNnmzLVdPj9FqFJNPqBZFve4w==
@@ -6658,14 +6480,11 @@ semver@^6.0.0, semver@^6.2.0, semver@^6.3.0:
   resolved "http://pak.truesoftware.net/semver/-/semver-6.3.0.tgz#ee0a64c8af5e8ceea67687b133761e1becbd1d3d"
   integrity sha512-b39TBaTSfV6yBrapU89p5fKekE2m/NwnDocOVruQFS1/veMgdzuPcnOM34M6CwxW8jH/lxEa5rBoDeUwu5HHTw==
 
-<<<<<<< HEAD
-=======
 semver@^7.0.0, semver@^7.1.1:
   version "7.1.1"
   resolved "http://pak.truesoftware.net/semver/-/semver-7.1.1.tgz#29104598a197d6cbe4733eeecbe968f7b43a9667"
   integrity sha512-WfuG+fl6eh3eZ2qAf6goB7nhiCd7NPXhmyFxigB/TOkQyeLP8w8GsVehvtGNtnNmyboz4TgeK40B1Kbql/8c5A==
 
->>>>>>> removed deperacted packages and annd react-webafx
 set-blocking@^2.0.0, set-blocking@~2.0.0:
   version "2.0.0"
   resolved "http://pak.truesoftware.net/set-blocking/-/set-blocking-2.0.0.tgz#045f9782d011ae9a6803ddd382b24392b3d890f7"
@@ -7135,11 +6954,7 @@ symbol-tree@^3.2.2:
   resolved "http://pak.truesoftware.net/symbol-tree/-/symbol-tree-3.2.4.tgz#430637d248ba77e078883951fb9aa0eed7c63fa2"
   integrity sha512-9QNk5KwDF+Bvz+PyObkmSYjI5ksVUYtjW7AU22r2NKcfLJcXp96hkDWU3+XndOsUb+AQ9QhfzfCT2O+CNWT5Tw==
 
-<<<<<<< HEAD
-tar@^4.4.10, tar@^4.4.12, tar@^4.4.8:
-=======
 tar@^4.4.10, tar@^4.4.12, tar@^4.4.2, tar@^4.4.8:
->>>>>>> removed deperacted packages and annd react-webafx
   version "4.4.13"
   resolved "http://pak.truesoftware.net/tar/-/tar-4.4.13.tgz#43b364bc52888d555298637b10d60790254ab525"
   integrity sha512-w2VwSrBoHa5BsSyH+KxEqeQBAllHhccyMFVHtGtdMpF4W7IRWfZjFiQceJPChOeTsSDVUpER2T8FA93pr0L+QA==
@@ -7419,15 +7234,9 @@ typescript@^3.7.4:
   integrity sha512-A25xv5XCtarLwXpcDNZzCGvW2D1S3/bACratYBx2sax8PefsFhlYmkQicKHvpYflFS8if4zne5zT5kpJ7pzuvw==
 
 uglify-js@^3.1.4:
-<<<<<<< HEAD
-  version "3.7.2"
-  resolved "http://pak.truesoftware.net/uglify-js/-/uglify-js-3.7.2.tgz#cb1a601e67536e9ed094a92dd1e333459643d3f9"
-  integrity sha512-uhRwZcANNWVLrxLfNFEdltoPNhECUR3lc+UdJoG9CBpMcSnKyWA94tc3eAujB1GcMY5Uwq8ZMp4qWpxWYDQmaA==
-=======
   version "3.7.3"
   resolved "http://pak.truesoftware.net/uglify-js/-/uglify-js-3.7.3.tgz#f918fce9182f466d5140f24bb0ff35c2d32dcc6a"
   integrity sha512-7tINm46/3puUA4hCkKYo4Xdts+JDaVC9ZPRcG8Xw9R4nhO/gZgUM3TENq8IF4Vatk8qCig4MzP/c8G4u2BkVQg==
->>>>>>> removed deperacted packages and annd react-webafx
   dependencies:
     commander "~2.20.3"
     source-map "~0.6.1"
@@ -7662,11 +7471,7 @@ which@^1.2.9, which@^1.3.0, which@^1.3.1:
   dependencies:
     isexe "^2.0.0"
 
-<<<<<<< HEAD
-which@^2.0.1:
-=======
 which@^2.0.2:
->>>>>>> removed deperacted packages and annd react-webafx
   version "2.0.2"
   resolved "http://pak.truesoftware.net/which/-/which-2.0.2.tgz#7c6a8dd0a636a0327e10b59c9286eee93f3f51b1"
   integrity sha512-BLI3Tl1TW3Pvl70l3yq3Y64i+awpwXqsGBYWkkqMtnbXgrMD+yj7rhW0kuEDxzJaYXGjEW5ogapKNMEKNMjibA==
