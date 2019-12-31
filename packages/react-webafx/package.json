@@ -1,6 +1,6 @@
 {
     "name": "@blendsdk/react-webafx",
-    "version": "1.0.5",
+    "version": "1.1.0",
     "description": "Set of React components and utilities to be used in BlendSDK",
     "main": "dist/index.js",
     "author": "Gevik Babakhani <gevikb@gmail.com>",
@@ -27,12 +27,12 @@
         "@blendsdk/i18n": "^1.13.3",
         "@blendsdk/stdlib": "^1.13.3",
         "@types/history": "^4.7.3",
+        "@types/js-cookie": "^2.2.4",
         "history": "^4.10.1",
+        "js-cookie": "^2.2.1",
         "mobx": "^5.15.1",
         "mobx-react": "^6.1.4",
-        "path-to-regexp": "^6.1.0",
-        "@types/js-cookie": "^2.2.4",
-        "js-cookie": "^2.2.1"
+        "path-to-regexp": "^6.1.0"
     },
     "peerDependencies": {
         "react": ">=16.12.0"
