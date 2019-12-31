@@ -1,0 +1,43 @@
+{
+    "name": "@blendsdk/react-webafx",
+    "version": "1.0.5",
+    "description": "Set of React components and utilities to be used in BlendSDK",
+    "main": "dist/index.js",
+    "author": "Gevik Babakhani <gevikb@gmail.com>",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/blendsdk/react.git"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "keywords": [
+        "react"
+    ],
+    "license": "MIT",
+    "types": "./dist/index.d.ts",
+    "scripts": {
+        "lint": "tslint -p ./tsconfig.json --fix",
+        "build": "rm -fR ./dist && tsc",
+        "watch": "rm -fR ./dist && tsc -w ",
+        "test": "jest --detectOpenHandles --passWithNoTests"
+    },
+    "dependencies": {
+        "@blendsdk/clientkit": "^1.13.3",
+        "@blendsdk/i18n": "^1.13.3",
+        "@blendsdk/stdlib": "^1.13.3",
+        "@types/history": "^4.7.3",
+        "history": "^4.10.1",
+        "mobx": "^5.15.1",
+        "mobx-react": "^6.1.4",
+        "path-to-regexp": "^6.1.0",
+        "@types/js-cookie": "^2.2.4",
+        "js-cookie": "^2.2.1"
+    },
+    "peerDependencies": {
+        "react": ">=16.12.0"
+    },
+    "devDependencies": {
+        "@types/react": "^16.9.17"
+    }
+}
