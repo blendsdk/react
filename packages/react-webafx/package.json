@@ -23,21 +23,21 @@
         "test": "jest --detectOpenHandles --passWithNoTests"
     },
     "dependencies": {
-        "@blendsdk/clientkit": "^1.13.3",
-        "@blendsdk/i18n": "^1.13.3",
-        "@blendsdk/stdlib": "^1.13.3",
-        "@types/history": "^4.7.3",
+        "@blendsdk/clientkit": "^1.14.3",
+        "@blendsdk/i18n": "^1.14.3",
+        "@blendsdk/stdlib": "^1.14.3",
+        "@types/history": "^4.7.5",
         "@types/js-cookie": "^2.2.4",
         "history": "^4.10.1",
         "js-cookie": "^2.2.1",
-        "mobx": "^5.15.1",
-        "mobx-react": "^6.1.4",
+        "mobx": "^5.15.4",
+        "mobx-react": "^6.1.8",
         "path-to-regexp": "^6.1.0"
     },
     "peerDependencies": {
         "react": ">=16.12.0"
     },
     "devDependencies": {
-        "@types/react": "^16.9.17"
+        "@types/react": "^16.9.19"
     }
 }
