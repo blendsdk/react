@@ -1,6 +1,6 @@
 {
     "name": "@blendsdk/react-webafx",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "description": "Set of React components and utilities to be used in BlendSDK",
     "main": "dist/index.js",
     "author": "Gevik Babakhani <gevikb@gmail.com>",
